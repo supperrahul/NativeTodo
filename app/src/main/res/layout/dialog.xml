@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+    />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlineTextFiled"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusedByDefault="true"
+        android:hint="Enter something">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:orientation="horizontal">
+      <Button
+          android:id="@+id/addbtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="add"
+          android:layout_marginHorizontal="10dp"
+          />
+      <Button
+          android:id="@+id/cancenbtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="cancel"
+          android:layout_marginRight="10dp"
+          />
+  </LinearLayout>
+
+</LinearLayout>
